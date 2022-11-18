@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <title>Atividade Bootstrap</title>   
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Titulo do site</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav id="menu" class="collapse navbar-collapse justify-content-end">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#carousel">Carousel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#card">Card</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho">
+
+    <section id="carousel" class="py-3">
+        
+            <div class="container">
+
+                <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img class="d-block w-100"
+                                src="https://cdn.pixabay.com/photo/2022/11/13/13/57/northern-lights-7589302_960_720.jpg"
+                                alt="">
+                            <div class="carousel-caption">
+                                <h3>Nome da legenda</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img class="d-block w-100"
+                                src="https://cdn.pixabay.com/photo/2022/10/17/17/37/sea-7528351_960_720.jpg" alt="">
+                            <div class="carousel-caption">
+                                <h3>Nome da legenda</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img class="d-block w-100"
+                                src="https://cdn.pixabay.com/photo/2022/10/18/19/13/fall-7530983_960_720.jpg" alt="">
+                            <div class="carousel-caption">
+                                <h3>Nome da legenda</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev"
+                        type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next"
+                        type="button">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-exemplo" class="active"
+                            data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+        </section>
+        <section id="card" class="py-4">
+            <div class="container">
+                <h1 class="py-3">Card</h1>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <article class="card">
+                            <header class="card-header">
+                                <h3>Cabecalho card</h3>
+                            </header>
+                            <img src="https://via.placeholder.com/100x100" alt="">
+                            <div class="card-body">
+                                <h4 class="card-titulo">Titulo do card</h4>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, dolorem praesentium
+                                    provident blanditiis voluptatum quo, voluptates voluptate vel tenetur est quisquam
+                                    quas dicta suscipit repudiandae, voluptatem voluptas fuga facilis accusantium?
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <article class="card">
+                            <header class="card-header">
+                                <h3>Cabecalho card</h3>
+                            </header>
+                            <img src="https://via.placeholder.com/100x100" alt="">
+                            <div class="card-body">
+                                <h4 class="card-titulo">Titulo do card</h4>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, dolorem praesentium
+                                    provident blanditiis voluptatum quo, voluptates voluptate vel tenetur est quisquam
+                                    quas dicta suscipit repudiandae, voluptatem voluptas fuga facilis accusantium?
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <article class="card">
+                            <header class="card-header">
+                                <h3>Cabecalho card</h3>
+                            </header>
+                            <img src="https://via.placeholder.com/100x100" alt="">
+                            <div class="card-body">
+                                <h4 class="card-titulo">Titulo do card</h4>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, dolorem praesentium
+                                    provident blanditiis voluptatum quo, voluptates voluptate vel tenetur est quisquam
+                                    quas dicta suscipit repudiandae, voluptatem voluptas fuga facilis accusantium?
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
